@@ -1,0 +1,73 @@
+/*style for common part for pages ============================
+==============================================================*/
+
+.contentWrapper {
+	width: 100%;
+}
+.content.withHero {
+	top: 84px;
+}
+.hero {
+	@extend %bgColor3;
+	height: 160px;
+	max-width: 100%;
+	padding: 70px 40px 40px;
+	background: url(../images/Home-page-Hero.jpg)  0 0 no-repeat $colorBlue;
+	background-size: 100% 100%;
+	box-shadow: 0 0 200px 0 rgba(0, 0, 0, 0.298) inset;
+	h1.largeText {
+		@extend %fontRaleway;
+		margin-bottom: 0;
+		width: 100%;
+		font-size: 65px;
+		line-height: 70px;
+	}
+	.heroBg {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+@media (max-width: 1169px) {
+	.content.withHero {
+		top: 60px;
+	}	
+}
+@media (max-width: 991px) {
+	.content.withHero {
+		text-align: left;
+		&.expanded {
+			top: 150px;
+		}
+	}
+	.hero {
+		height: 140px;
+		padding: 50px 30px 20px;
+		text-align: left;
+		h1.largeText {
+			font-size: 50px;
+			line-height: 55px;
+		}
+	}
+	
+}
+
+@media (max-width: 600px) {
+	.hero {
+		background-image: none;
+		height: 100px;
+		padding: 40px 15px 20px;
+		h1.largeText {
+			font-size: 35px;
+			line-height: 40px;
+		}
+	}
+	.content.withHero {
+		top: 50px;
+		&.expanded {
+			top: 320px;
+		}
+	}
+}
+

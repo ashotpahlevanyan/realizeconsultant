@@ -1,0 +1,101 @@
+/*style for contact page======================================
+===============================================================*/
+
+.contactItems {
+	padding-top: 84px;
+	.phoneEmail {
+		address {
+			strong {
+				@extend %fontColor3;
+				font-size: 20px;
+			}
+		}
+		.mailto {
+			font-size: 20px;
+			@extend %fontColor4;
+			@extend %textDecorNone;
+			font-weight: 600;
+			&:hover {
+				@extend %textDecorUnderline;
+			} 
+		}
+	}
+	.contactForm {
+		.contactHeading {
+			@extend %fontColor3;
+			font-weight: 600;
+			margin-bottom: 20px;
+		}
+		.googleForm {
+
+		}
+		.originalContactForm {
+			.messageWrap {
+				margin-bottom: 20px;
+			}
+			.message {
+				width: 100%;
+				resize: none;
+			}
+			.sendMessage {
+				@extend %fontColor1;
+				@extend %bgColor3;
+				font-weight: 700;
+				width: 215px;
+				padding: 10px 20px;
+				@extend %textAlignCenter;
+			}
+		}
+		.form-control {
+			height: 60px;
+			font-size: 18px;
+			border-top: none;
+			border-right: none;
+			border-left: none;
+			box-shadow: none;
+			border-radius: 0;
+			opacity: 0.7;
+			padding: 15px 10px;
+			&:active, &:focus {
+				border-bottom: 1px solid $colorBlue;
+			}
+			&.message {
+				height: 150px;
+			}
+		}
+		.nameEmail {
+			margin-bottom: 20px;
+			.name {
+				width: 48%;
+			}
+			.email {
+				width: 48%;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 991px) {
+	.contactItems {
+		.contactForm {
+			margin-top: 20px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.contactItems {
+		.contactForm {
+			.nameEmail {
+				.name {
+					width: 100%;
+					margin-bottom: 20px;
+				}	
+				.email {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

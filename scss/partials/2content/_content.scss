@@ -1,0 +1,183 @@
+/* Style for content ==============================
+===================================================*/
+
+.withBg {
+	background: url('../images/Home-page-Hero.jpg') no-repeat 50% 50%;
+}
+
+.content {
+	position: relative;
+	top: 168px;
+	h1.largeText {
+		@extend %fontRaleway;
+		margin-bottom: 20px;
+		width: 100%;
+	}
+	.credo {
+		@extend %fontColor1;
+		margin-top: 56px;
+		margin-bottom: 25px;
+	}
+	.serviceDescription {
+		@extend %fontColor1;
+		font-size: 20px;
+		width: 64%;
+		line-height: 32px;
+	}
+}
+.consultationBlock {
+	margin-top: 54px;
+	.freeConsultation {
+		@extend %bgColor4;
+		@extend %fontColor1;
+		@include border-radius(8px);
+		font-size: 37px;
+		line-height: 60px;
+		padding: 18px 24px 18px 40px;
+		border: none;
+		&:hover {
+			@extend %bgColor5;;
+		}
+	}
+	.consultForm {
+
+	}
+	.arrowRight {
+		display: inline-block;
+		@extend %verticalAlignMiddle;	
+		background: url('../images/ic_arrow_big.svg') no-repeat;
+		vertical-align: top;
+		margin-top: 7px;
+		margin-left: 24px;
+		width: 48px;
+		height: 48px;
+	}
+	.callUs {
+		@extend %fontColor1;
+		margin-top: 44px;
+		padding: 0 35px 0 29px;
+		font-size: 20px;
+		line-height: 22px;
+	}
+	.phoneNumber {
+		@extend %fontColor1;
+		background: none;
+		border: none;
+		font-size: 37px;
+		line-height: 96px;
+		padding: 0 25px;
+		&:hover {
+			@extend %bgColor5;
+			@include border-radius(8px);
+		}
+	}
+	.phoneIcon {
+		display: inline-block;
+		@extend %verticalAlignSub;
+		background: url('../images/ic_call_big.svg')no-repeat;
+		margin-left: 20px;
+		width: 48px;
+		height: 48px;
+	}
+}
+
+
+@media (max-width: 991px) {
+	.content {
+		text-align: center;
+		top: 150px;
+		-webkit-transition: top 0.5s ease-in-out 0.1s;
+		-moz-transition: top 0.5s ease-in-out 0.1s;
+		-o-transition: top 0.5s ease-in-out 0.1s;
+		transition: top 0.5s ease-in-out 0.1s; 
+		h1.largeText {
+			font-size: 55px;
+			line-height: 54px;
+			margin-bottom: 40px;
+		}
+		.credo {
+			font-size: 30px;
+			line-height: 40px;
+			margin-top: 20px;
+		}
+		.serviceDescription {
+			font-size: 20px;
+			line-height: 32px;
+			width: 100%;
+		}
+	}
+	.consultationBlock {
+		.callUs {
+			margin-top: 20px;
+			display: block;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.content {
+		top: 100px;
+		&.expanded {
+			top: 320px;
+			-webkit-transition: top 0.5s ease-in-out 0.1s;
+			-moz-transition: top 0.5s ease-in-out 0.1s;
+			-o-transition: top 0.5s ease-in-out 0.1s;
+			transition: top 0.5s ease-in-out 0.1s; 
+		}
+		h1.largeText {
+			font-size: 35px;
+			line-height: 48px;
+			margin-bottom: 20px;
+		}
+		.credo {
+			font-size: 24px;
+			line-height: 32px;
+			margin-top: 24px;
+		}
+		.serviceDescription {
+			font-size: 16px;
+			line-height: 24px;
+			text-align: left;
+			width: 100%;
+		}
+	}
+	.consultationBlock {
+		.freeConsultation {
+			padding-left: 16px;
+			padding-right: 16px;
+			width: 100%;
+			font-size: 20px;
+			line-height: 40px;
+			text-transform: uppercase;
+		}
+		.callUs {
+			margin-top: 20px;
+			display: block;
+			margin-bottom: 20px;
+		}
+		.phoneNumber {
+			margin-top: 8px;
+			padding-left: 6px;
+			padding-right: 6px;
+			width: 280px;
+			font-size: 30px;
+			line-height: 72px;
+		}
+		.arrowRight {
+			vertical-align: top;	
+			background: url('../images/ic_arrow_small.svg') no-repeat;
+			width: 24px;
+			height: 24px;
+		}
+		.phoneIcon {
+			vertical-align: middle;	
+			background: url('../images/ic_call_white_small.svg')no-repeat;
+			width: 24px;
+			height: 24px;
+		}
+	}
+}
+
+
+

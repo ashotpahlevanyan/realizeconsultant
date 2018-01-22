@@ -1,0 +1,191 @@
+/* Style for navbar ==============================
+===================================================*/
+
+.navBar {
+	@extend %fontColor3;
+	border: none;
+	margin-bottom: 0;
+	padding: 0;
+	min-height: 0;
+	font-size: 0;
+	.navbar-collapse {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.nav {
+		li {
+			&.selected {
+				a {
+					@extend %bgColor3;
+					@extend %fontColor1;
+				}
+			}
+			a {
+				@extend %textTransformUpper;
+				@extend %fontColor3;
+				@extend %fontOpenSans;
+				font-size: 16px;
+				line-height: 24px;
+				font-weight: 700;
+				padding: 30px 24px;
+				&:hover {
+					@extend %bgColor2;
+				}
+			}
+		}
+	}
+	.freeConsultation {
+		display: inline-block;
+		padding-left: 24px;
+		.consult {
+			@extend %bgColor1;
+			@extend %textTransformUpper;
+			@extend %fontColor4;
+			@extend %fontOpenSans;
+			font-size: 16px;
+			padding: 30px 24px;
+			font-weight: 700;
+			border: none;
+			&:hover {
+				@extend %fontColor1;
+				@extend %bgColor3;
+			}
+		}
+	}
+	.navbar-header {
+		display: inline-block;
+	}
+}
+
+.navbar-toggle {
+	@extend %bgColorTransparent;
+	@include border-radius(0);
+	border: none;
+	padding: 18px 24px;
+	margin: 0;
+	span {
+		width: 24px;
+		height: 24px;
+	}
+	.menuIcon {
+		display: block;
+		background: url(../images/ic_menu_blue.svg) 0 0 no-repeat;
+	}
+	.xIcon {
+		display: none;
+		background: url(../images/ic_close_blue.svg) 0 0 no-repeat;
+	}
+	&:hover {
+		@extend %bgColor2;
+	}
+	
+}
+
+/* Responsive NavBar================================================
+===================================================================*/
+@media (max-width: 1169px) {
+	.navBar {
+		.nav {
+			li {
+				a {
+					padding: 18px 15px;
+				}
+			}
+		}
+		.freeConsultation {
+			display: inline-block;
+			padding-left: 24px;
+			.consult {
+				padding: 18px 15px;
+			}
+		}
+	}
+}	
+
+@media (max-width: 991px) {
+	.navBar {
+		width: 100%;
+		.freeConsultation {
+			padding-left: 12px;
+		}
+		.navbar-collapse {
+			margin-top: 5px;
+			padding: 0;
+			box-shadow: none;
+			&.collapse {
+				display: none !important;
+				&.in {
+					display: block !important;
+				}
+			}
+		}
+		.navbar-header {
+			position: absolute;
+			right: 200px;
+			float: none;
+			.navbar-toggle {
+				display: block;
+			}
+		}
+		.navbar-collapse {
+			max-height: inherit;
+		}
+		.realizeNavbar {
+			display: block;
+			visibility: visible;
+			position: relative;
+			
+			width: 100%;
+		}
+		.nav {
+			width: 100%;
+			margin: 0;
+			padding: 10px 0;
+			border-top: 5px solid $colorBlue;
+			background-color: $colorWhite;	
+			li {
+				display: inline-block;
+				text-align: center;
+				width: 25%;
+				a {
+					color: $colorNav;
+				}
+			}
+		}
+	}
+	.topBar {
+		&.activated {
+			.navbar-toggle {
+				.menuIcon {
+					display: none;
+				}
+				.xIcon {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.navbar-toggle {
+		background-color: transparent;
+		@include border-radius(0);
+		padding: 14px 12px;
+	}
+	.navBar {
+		.freeConsultation {
+			.consult {
+				font-size: 16px;
+				line-height: 20px;
+				padding: 16px 12px;
+			}
+		}
+		.nav {
+			li {
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+}

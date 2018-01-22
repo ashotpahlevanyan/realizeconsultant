@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <style>
+
+      .cls-3 {
+        fill: #ffffff;
+        opacity: 0;
+      }
+
+      .cls-4 {
+        fill: #ffffff;
+      }
+    </style>
+  </defs>
+  <g id="ic_arrow_bigsvg">
+    <rect id="rect-1" class="cls-3" width="48" height="48"/>
+    <path d="M24.000,8.000 C24.000,8.000 21.170,10.830 21.170,10.830 C21.170,10.830 32.340,22.000 32.340,22.000 C32.340,22.000 8.000,22.000 8.000,22.000 C8.000,22.000 8.000,26.000 8.000,26.000 C8.000,26.000 32.340,26.000 32.340,26.000 C32.340,26.000 21.170,37.170 21.170,37.170 C21.170,37.170 24.000,40.000 24.000,40.000 C24.000,40.000 40.000,24.000 40.000,24.000 C40.000,24.000 24.000,8.000 24.000,8.000 Z" id="path-1" class="cls-4" fill-rule="evenodd"/>
+  </g>
+</svg>

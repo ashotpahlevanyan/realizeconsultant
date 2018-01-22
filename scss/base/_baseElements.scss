@@ -1,0 +1,70 @@
+/*===========================================
+
+	baseElement.scss
+	* css style for base Elements
+
+=============================================*/
+
+*,
+*:before,
+*:after {
+ @extend %boxSizingBorderBox;
+}
+
+*, *:focus {
+	outline: none;
+}
+
+body {
+	@extend %overflowScrollY;
+	//@extend %fontColor3;
+	//@extend %fontTahomaHelvetica;
+	font-family: "Open Sans";
+	//font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	//background-color: #fff;
+	
+	//background-size: cover;
+	.container {
+		//width: 1170px; //1600
+		width: 90%;
+		max-width: 1200px;  
+		padding-left: 0;
+		padding-right: 0;
+		margin: 0 auto;
+	}
+	
+}
+
+
+
+.strong {
+	@extend %fontStrong;
+}
+
+
+.clear {
+    clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+.clearfix:after {
+  clear: both;
+}
+
+.pull-left {
+	float: left;
+}
+.pull-right {
+	float: right;
+}
+
+.marginTop {
+	margin-top: 20px !important;
+}
+
+

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <style>
+
+      .cls-3 {
+        fill: #75aee3;
+        opacity: 0;
+      }
+
+      .cls-4 {
+        fill: #0078e6;
+      }
+    </style>
+  </defs>
+  <g id="ic_forecastingsvg">
+    <rect id="rect-1" class="cls-3" width="48" height="48"/>
+    <path d="M19.000,9.000 C19.000,9.000 19.000,13.000 19.000,13.000 C19.000,13.000 32.170,13.000 32.170,13.000 C32.170,13.000 9.000,36.170 9.000,36.170 C9.000,36.170 11.830,39.000 11.830,39.000 C11.830,39.000 35.000,15.830 35.000,15.830 C35.000,15.830 35.000,29.000 35.000,29.000 C35.000,29.000 39.000,29.000 39.000,29.000 C39.000,29.000 39.000,9.000 39.000,9.000 C39.000,9.000 19.000,9.000 19.000,9.000 Z" id="path-1" class="cls-4" fill-rule="evenodd"/>
+  </g>
+</svg>

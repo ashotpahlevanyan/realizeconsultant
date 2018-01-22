@@ -1,0 +1,214 @@
+/* Style for footer ==============================
+===================================================*/
+
+.footer {
+	padding: 10px 24px;
+	position: relative;
+	margin-top: 210px;
+	bottom: 0;
+	width: 100%;
+	.socialsNavbar {
+		.socials {
+			padding: 0 15px;
+			margin-top: 5px;
+			a {
+				vertical-align: middle;
+				display: inline-block;
+				margin-right: 32px;
+				opacity: 0.5;
+				.facebook {
+					margin-right: 0;
+				}
+
+				&:hover {
+					opacity: 0.8;
+				}
+			}
+			.logoHome {
+				width: 40px;
+				height: 40px;
+				background: url(../images/ic_rc_mark_white.svg) 0 0 no-repeat;
+				&:hover {
+					background: url(../images/ic_rc_mark_white.svg) 0 0 no-repeat; 
+				}
+			}
+			.facebook {
+				width: 24px;
+				height: 24px;
+				background: url(../images/ic_facebook_white.svg) 0 0 no-repeat;
+				&:hover {
+					background: url(../images/ic_facebook_white.svg) 0 0 no-repeat; 
+				}
+
+			}
+			.twitter {
+				width: 24px;
+				height: 24px;
+				background: url(../images/ic_twitter_white.svg) 0 0 no-repeat;
+				&:hover {
+					background: url(../images/ic_twitter_white.svg) 0 0 no-repeat; 
+				}
+			}
+		}
+		.footNav {
+			margin-left: 10px;
+			li {
+				a {
+					@extend	%fontColor5;
+					@extend %textTransformUpper;
+					background: transparent;
+					font-size: 14px;
+					font-weight: 600;
+					&:hover {
+						@extend %fontColor6;	
+					}
+
+				}
+			}
+		}
+	}
+	.termsPrivacyCopyright {
+		.copyright {
+			@extend	%fontColor5;
+			background: transparent;
+			font-size: 14px;
+			&:hover {
+				@extend %fontColor6;	
+			}
+		}
+		.termsPrivacy {
+			margin-top: 10px;
+			li {
+				display: inline-block;
+			}
+			a {
+				@extend	%fontColor5;
+				background: transparent;
+				font-size: 14px;
+
+				&:hover {
+					@extend %fontColor6;	
+					@extend %textDecorNone;
+				}
+			}
+			.terms {
+				margin-right: 20px;
+			}
+		}
+	}
+}
+
+/*Footers for all Pages ======================
+==============================================*/
+
+.footer.allPages {
+	margin-top: 120px;
+	.socialsNavbar {
+		.socials {
+			.logoHome {
+				background: url(../images/ic_rc_mark_gray.svg) 0 0 no-repeat;
+				&:hover {
+					background: url(../images/ic_rc_mark_darkgray.svg) 0 0 no-repeat; 
+				}
+			}
+			.facebook {
+				background: url(../images/ic_facebook_gray.svg) 0 0 no-repeat;
+				&:hover {
+					background: url(../images/ic_facebook_darkgray.svg) 0 0 no-repeat; 
+				}
+
+			}
+			.twitter {
+				background: url(../images/ic_twitter_gray.svg) 0 0 no-repeat;
+				&:hover {
+					background: url(../images/ic_twitter_darkgray.svg) 0 0 no-repeat; 
+				}
+			}
+		}
+		.footNav {
+			li {
+				a {
+					@extend	%fontColor9;
+					&:hover {
+						@extend %fontColor10;	
+					}
+
+				}
+			}
+		}
+	}
+	.termsPrivacyCopyright {
+		.copyright {
+			@extend	%fontColor9;
+			&:hover {
+				@extend %fontColor10;	
+			}
+		}
+		.termsPrivacy {
+			a {
+				@extend	%fontColor9;
+				&:hover {
+					@extend %fontColor10;	
+				}
+			}
+		}
+	}
+}
+
+
+
+@media (max-width: 1100px) {
+	.socialsNavbar {
+		.socials {
+			margin-right: 0;
+
+		}
+		.socials, .footNav {
+			float: none !important; 
+		}
+	}
+}
+@media (max-width: 950px) {
+	.socialsNavbar, .termsPrivacyCopyright {
+		float: none !important;
+		margin: 0 auto;
+	}
+	.socialsNavbar {
+		text-align: center;
+		.socials, .footNav {
+			margin: 10px auto;
+		}
+		.socials {
+			text-align: center;
+			.logoHome {
+				display: none;
+			}
+		}
+		.footNav.nav {
+			float: none !important;
+			display: inline-block;
+		}
+	}
+	.termsPrivacyCopyright {
+		.copyright {
+			text-align: center;
+		}
+		.termsPrivacy {
+			text-align: center;
+		}
+	}
+
+}
+
+@media (max-width: 768px) {
+	.socialsNavbar {
+		.footNav.nav {
+			li {
+				display: inline-block;
+			}
+		}
+	}
+	.footer {
+		margin-top: 170px;
+	}
+}

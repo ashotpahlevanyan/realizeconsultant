@@ -1,0 +1,92 @@
+/*style for popup======================================
+=======================================================*/
+
+.modalDialog {
+	&.modal.fade {
+		background: #444;
+		opacity: 1;
+	}
+	.modal-dialog {
+		background-opacity: 1;
+		margin: 10% auto 0;
+		max-width: 400px;
+		width: 90%;
+		.modal-header {
+			border-bottom: none;
+			.close {
+				font-size: 25px;
+				&:hover {
+					@extend %fontColor4;
+				}
+			}
+		}
+		.modal-content {
+			padding: 25px;
+		}
+		.modal-body {
+
+		}
+		.modal-footer {
+			border-top: none;
+		}
+		.modal-title {
+			font-size: 35px;
+			font-weight: 600;
+			line-height: 40px;
+			@extend %fontRaleway;
+			text-align: center;
+			margin-top: 10px;
+		}
+		.modalSubTitle {
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: 500px;
+			@extend %fontOpenSans;
+			text-align: center;
+			margin: 16px auto 0;
+		}
+		.originalContactForm {
+			.name, .email {
+				color: #ccc;
+				font-size: 16px;
+				line-height: 20px;
+				@extend %fontOpenSans;
+				border-top: none;
+				border-left: none;
+				border-right: none;
+				border-radius: 0;
+				margin-bottom: 20px;
+				box-shadow: none;
+			}
+		}
+		.sendMessage {
+			@extend %bgColor3;
+			font-weight: 600;
+			@extend %textTransformUpper;
+			width: 100%;
+			font-size: 16px;
+			line-height: 44px;
+			padding-left: 24px;
+			padding-right: 24px;
+			margin: 0 auto;
+		}
+	}
+}
+
+#myModal {
+
+}
+@media (max-width: 600px) {
+	.modalDialog {
+		.modal-dialog {
+			margin: 20% auto 0;
+			.modal-content {
+				padding: 10px 15px;
+			}
+			.modal-title {
+				font-size: 25px;
+				line-height: 30px;
+			}
+		}
+	}
+}

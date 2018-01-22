@@ -1,0 +1,61 @@
+/* Style for topbar ==============================
+===================================================*/
+
+.topBar {
+	@include box-shadow(0, 1px, 8px, rgba(0, 0, 0, 0.4));
+	position: fixed;
+	top: 0;
+	padding: 0 24px;
+	width: 100%;
+	background-color: white;
+	z-index: 9999;
+	.logo {
+		display: block;
+		padding: 22px 24px;
+		&:hover {
+			@extend %bgColor2;
+		}
+		.desktop {
+			display: block;
+		}
+		.mobile {
+			display: none;
+		}
+	}
+		
+}
+
+/* Responsive TopBar================================================
+===================================================================*/
+
+@media (max-width: 1169px) {
+	.topBar {
+		.logo {
+			padding: 10px;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.topBar {
+		padding: 0;
+		.logo {
+			position: absolute;
+			z-index: 99999;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.topBar {
+		.logo {
+			padding: 6px;
+			.desktop {
+				display: none;
+			}
+			.mobile {
+				display: block;
+			}
+		}
+	}
+}
